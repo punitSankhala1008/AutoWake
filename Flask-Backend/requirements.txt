@@ -1,0 +1,7 @@
+PyQt5
+opencv-python
+tensorflow
+dlib
+numpy
+scikit-learn
+Pillow

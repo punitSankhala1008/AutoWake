@@ -1,0 +1,65 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Drowsiness Detection</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-4">Driver Drowsiness Detection</h1>
+      <div id="videoContainer" class="mb-3">
+        Optionally, include a video element if you capture directly in Electron 
+        <video id="videoFeed" width="640" height="480" autoplay muted></video>
+      </div>
+      <button id="startBtn" class="btn btn-primary">Start Detection</button>
+      <div id="status" class="mt-3">Status: Normal</div>
+      <div id="spinner" style="display: none">
+        <img src="spinner.gif" alt="Loading..." />
+      </div>
+    </div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drowsiness Detection App</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #333;
+      }
+      #videoFeed {
+        width: 640px;
+        height: 480px;
+        border: 2px solid #333;
+        display: block;
+        margin: 20px auto;
+      }
+      #status {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Drowsiness Detection</h1>
+    <img id="videoFeed" alt="Video Feed" />
+    <div id="status">Status: Monitoring...</div>
+    <script src="renderer.js"></script>
+  </body>
+</html>
