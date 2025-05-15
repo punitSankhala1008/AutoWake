@@ -96,6 +96,7 @@ from sklearn.model_selection import train_test_split
 def load_images(folder, label, img_size=(64, 64)):
     images = []
     labels = []
+    
     if not os.path.exists(folder):
         raise FileNotFoundError(f"Directory {folder} does not exist.")
     for filename in os.listdir(folder):

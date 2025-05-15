@@ -76,7 +76,8 @@ detector = DrowsinessDetector()
 voice = VoiceAssistant()
 
 # Initialize webcam
-video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+video_capture = cv2.VideoCapture(0)
+
 if not video_capture.isOpened():
     raise RuntimeError("Error: Could not open webcam.")
 
@@ -134,6 +135,8 @@ def video_feed():
 def get_status():
     """Return drowsiness status."""
     return jsonify(drowsy_state)
+
+
 
 def cleanup():
     """Release resources."""

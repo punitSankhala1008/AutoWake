@@ -9,7 +9,7 @@ def main():
     voice = VoiceAssistant()
     
     # Open the default webcam
-    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    cap = cv2.VideoCapture(0)
     if not cap.isOpened():
         print("Error: Could not open webcam. Please check your camera or its drivers.")
         return
