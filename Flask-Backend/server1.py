@@ -912,8 +912,8 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 ear_detector = DrowsinessDetectorEAR(
     predictor_path=os.path.join(base_dir,"src" , "models", "shape_predictor_68_face_landmarks.dat"),
     ear_threshold=0.20,
-    ear_consec_frames=30,
-    mar_threshold=0.35,
+    ear_consec_frames=20,
+    mar_threshold=0.25,
     mar_consec_frames=15,
     cooldown_secs=2.0
 )
